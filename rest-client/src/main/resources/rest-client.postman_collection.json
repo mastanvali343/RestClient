@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "ac6c057b-283b-4697-8fa8-b1dd71c9c0a9",
+		"name": "rest-client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product-app",
+			"item": [
+				{
+					"name": "saveProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"laptop\",\r\n    \"number\":82748395,\r\n    \"type\":\"electronic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_path}}/saveProduct",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"saveProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_path}}/getProductInfo/2",
+							"host": [
+								"{{base_path}}"
+							],
+							"path": [
+								"getProductInfo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rest-client",
+			"item": [
+				{
+					"name": "getProductInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/product/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"spring boot\",\r\n    \"number\":8348737,\r\n    \"type\":\"book\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/product/saveProduct",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"saveProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/product/type/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductInfo json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/product/string/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"string",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
