@@ -1,2 +1,2 @@
 # RestClient
-This repository is about exploring rest clients in java
+This repository is about exploring RestTemplate clients in java
